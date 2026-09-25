@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BoulderTrack</string>
+    
+    <!-- General -->
+    <string name="wroc">Back</string>
+    <string name="anuluj">Cancel</string>
+    <string name="zamknij">Close</string>
+    <string name="start">Start</string>
+    <string name="brak">None</string>
+    <string name="statystyki">Stats</string>
+    
+    <!-- Session List -->
+    <string name="nowa_sesja">New Climbing Session</string>
+    <string name="nazwa_lokalizacji">Gym / Location Name</string>
+    <string name="dodaj_sesje">Add Session</string>
+    <string name="brak_sesji">No sessions yet!</string>
+    <string name="dodaj_pierwsza_sesje">Tap the + button to start your first workout.</string>
+    <string name="sesja_podsumowanie">Boulders: %1$d | Max Grade: %2$s</string>
+    <string name="powitanie">Hi, Climber 👋</string>
+    <string name="passa_miesiac" tools:ignore="PluralsCandidate">🔥 %1$d ascents this month</string>
+    <string name="rozpocznij_nowa_sesje"> Start new session</string>
+    
+    <!-- Session Detail -->
+    <string name="sesja">Session</string>
+    <string name="brak_baldow">No boulders logged yet.</string>
+    <string name="brak_baldow_tytul">No boulders logged yet</string>
+    <string name="brak_baldow_opis">Tap + to save your first ascent in this session</string>
+    <string name="liczba_prob_wartosc">Attempts: %1$d</string>
+    <string name="wszystkie">All</string>
+    
+    <!-- Add Boulder -->
+    <string name="wycena">Grade</string>
+    <string name="styl_przejscia">Climb Style</string>
+    <string name="liczba_prob">Attempts</string>
+    <string name="tagi">Tags</string>
+    <string name="notatka_opcjonalnie">Note (optional)</string>
+    <string name="dodaj_bald">Add Boulder</string>
+    
+    <!-- Tags -->
+    <string name="tag_krawadki">Crimps</string>
+    <string name="tag_oblaki">Slopers</string>
+    <string name="tag_dach">Roof</string>
+    <string name="tag_polog">Slab</string>
+    <string name="tag_rysa">Crack</string>
+    <string name="tag_skok">Dyno</string>
+    
+    <!-- Styles -->
+    <string name="flash">Flash</string>
+    <string name="top">Top</string>
+    <string name="projekt">Project</string>
+    
+    <!-- Stats -->
+    <string name="skutecznosc">Efficiency</string>
+    <string name="brak_danych">No data</string>
+    <string name="piramida">Climbing Pyramid</string>
+    <string name="statystyki_puste">Log your first ascents to see statistics!</string>
+
+    <!-- Dialogs -->
+    <string name="usuwanie_sesji">Delete session</string>
+    <string name="czy_usunac_sesje">Are you sure you want to delete session \'%1$s\'?</string>
+    <string name="usun">Delete</string>
+    <!-- Badges -->
+    <string name="odznaka_miesiac">Month on the wall 🧗‍♂️</string>
+    
+    <!-- Beta Library -->
+    <string name="brak_patentow">No saved betas</string>
+    
+    <!-- Colors -->
+    <string name="kolor_zielony">Green</string>
+    <string name="kolor_rozowy">Pink</string>
+    <string name="kolor_bialy">White</string>
+    <string name="kolor_zolty">Yellow</string>
+    <string name="kolor_pomaranczowy">Orange</string>
+    <string name="kolor_czerwony">Red</string>
+    <string name="kolor_fioletowy">Purple</string>
+    <string name="kolor_niebieski">Blue</string>
+    <string name="kolor_czarny">Black</string>
+    
+    <!-- Session Detail / Add Boulder -->
+    <string name="zdjecia">Photos</string>
+    <string name="wybrane_zdjecie">Selected photo</string>
+    <string name="usuwanie_balda">Delete boulder</string>
+    <string name="czy_usunac_przejscie">Are you sure you want to delete this ascent? This action cannot be undone.</string>
+    <string name="udostepnij">Share</string>
+    <string name="zdjecie_balda">Boulder photo</string>
+    <string name="powiekszone_zdjecie">Zoomed photo</string>
+    
+    <!-- Timer -->
+    <string name="stoper_odpoczynku">Rest timer</string>
+    <string name="gotowy_na_wstawke">Ready to climb!</string>
+    <string name="odpoczywaj">Resting&#8230;</string>
+    <string name="nowa_wstawka">New attempt</string>
+    <string name="czas_na_wstawke_opis">Rest time is over – time to climb! 🧗‍♂️</string>
+    <string name="wstrzymaj">Pause</string>
+    <string name="wznow">Resume</string>
+    <string name="resetuj">Reset</string>
+    
+    <!-- Share Dialog -->
+    <string name="topow">Tops</string>
+    <string name="zrob_screena">Take a screenshot and share!</string>
+    <string name="wstawek">Attempts</string>
+    
+    <!-- Stats -->
+    <string name="sr_prob_na_sukces">Avg. attempts per success</string>
+    <string name="ukonczone_baldy">Completed boulders</string>
+    <string name="osiagniecia">Achievements</string>
+    <string name="piramida_przejsc">Ascent pyramid</string>
+    <string name="radar_stylu">Style Radar</string>
+    <string name="progres_topow">Top Progress</string>
+    <string name="progresja_wycen">Grade progression</string>
+    <string name="twoje_sesje">Your sessions</string>
+    <string name="aktualne_projekty">🎯 Current Projects</string>
+
+    <!-- Settings -->
+    <string name="ustawienia">Settings</string>
+    <string name="kopia_zapasowa">Data &amp; Backup</string>
+    <string name="eksportuj_dane">Export data</string>
+    <string name="eksportuj_dane_opis">Save a backup of your sessions to a JSON file</string>
+    <string name="importuj_dane">Import data</string>
+    <string name="importuj_dane_opis">Restore sessions from a selected JSON file</string>
+    <string name="eksportuj">Export</string>
+    <string name="importuj">Import</string>
+    <string name="import_sukces">Data imported successfully!</string>
+    <string name="import_blad">An error occurred while importing data</string>
+    <string name="jezyk">App Language</string>
+    <string name="jezyk_opis">Choose your preferred interface language</string>
+    <string name="jezyk_polski">Polski 🇵🇱</string>
+    <string name="jezyk_angielski">English 🇬🇧</string>
+    <string name="preferencje_wspinaczkowe">Climbing Preferences</string>
+    <string name="domyslna_skala">Default Grade Scale</string>
+    <string name="domyslna_skala_opis">Default scale used when adding new ascents</string>
+    <string name="skala_font">Fontainebleau (6A, 7A+)</string>
+    <string name="skala_v">V-Scale (V3, V7)</string>
+    <string name="skala_kolory">Colors (Yellow, Green&#8230;)</string>
+    <string name="skala_1_10">Scale 1–10 (1, 5, 10)</string>
+    <string name="stoper_domyslny">Default Rest Timer</string>
+    <string name="stoper_domyslny_opis">Starting time for the rest timer between attempts</string>
+    <string name="sekund_format">%1$d s</string>
+    <string name="minut_format">%1$d min</string>
+    <string name="czas_wybrany">Selected: %1$d min (%2$d s)</string>
+    <string name="o_aplikacji">About</string>
+    <string name="wersja_aplikacji">Version 1.0.0</string>
+    <string name="statystyki_bazy">Database Statistics</string>
+    <string name="lacznie_sesji" tools:ignore="PluralsCandidate">Sessions in database: %1$d</string>
+    <string name="lacznie_baldow" tools:ignore="PluralsCandidate">Boulders in database: %1$d</string>
+
+    <!-- Projects -->
+    <string name="projekty">Projects</string>
+    <string name="moje_projekty">My Projects</string>
+    <string name="brak_projektow">No active projects</string>
+    <string name="brak_projektow_opis">Mark a boulder as \'Project\' during a session to track it here.</string>
+    <string name="brak_wynikow_wyszukiwania">No search results found</string>
+    <string name="zaliczony_top">Sent! (TOP)</string>
+    <string name="kolejna_proba">+1 attempt</string>
+    <string name="przejdz_do_sesji">View session</string>
+    <string name="usun_projekt">Delete project</string>
+    <string name="czy_usunac_projekt">Are you sure you want to delete this project?</string>
+
+    <!-- Search & Filter -->
+    <string name="szukaj_sesji_lub_sciany">Search gym or note…</string>
+    <string name="szukaj_projektu">Search project (grade, gym, tag)…</string>
+    <string name="filtruj_sciane">Filter gym</string>
+    <string name="wszystkie_sciany">All gyms</string>
+
+    <!-- Rest Timer Notifications -->
+    <string name="stoper_powiadomienie_tytul">Rest Timer</string>
+    <string name="stoper_powiadomienie_odliczanie">Time remaining: %1$s</string>
+    <string name="stoper_zakonczony_tytul">Rest time is up! ⏰</string>
+    <string name="stoper_zakonczony_tekst">Ready for another burn? Send it!</string>
+    <string name="stoper_pauza">Pause</string>
+    <string name="stoper_wznow">Resume</string>
+    <string name="stoper_plus_30">+30s</string>
+    <string name="stoper_reset">Reset</string>
+
+    <!-- Themes -->
+    <string name="motyw">App Theme</string>
+    <string name="motyw_opis">Choose interface visual appearance</string>
+    <string name="motyw_systemowy">System ⚙️</string>
+    <string name="motyw_jasny">Light ☀️</string>
+    <string name="motyw_ciemny">Dark 🌙</string>
+    <string name="motyw_amoled">AMOLED ⚫</string>
+
+    <!-- Share Session -->
+    <string name="udostepnij_sesje_tytul">Bouldering Session Summary</string>
+    <string name="udostepnij_sesje_przycisk">Share Session 🚀</string>
+    <string name="udostepnij_sukces">Opening share sheet…</string>
+
+    <!-- Auto-complete -->
+    <string name="ostatnie_scianki">Recent gyms:</string>
+
+    <!-- Activity Heatmap -->
+    <string name="kalendarz_aktywnosci">Activity Calendar</string>
+    <string name="kalendarz_aktywnosci_opis">Training regularity over recent months</string>
+    <string name="dni_treningowych">%1$d training days</string>
+    <string name="passa_dni">🔥 Streak: %1$d days</string>
+    <string name="mniej">Less</string>
+    <string name="wiecej">More</string>
+
+    <!-- Stats Time Range -->
+    <string name="zakres_czasu">Range:</string>
+    <string name="zakres_wszystko">All Time</string>
+    <string name="zakres_30_dni">Last 30 days</string>
+    <string name="zakres_90_dni">Last 3 months</string>
+    <string name="zakres_ten_rok">This year</string>
+
+    <!-- Bottom Navigation Bar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_projekty">Projects</string>
+    <string name="nav_statystyki">Stats</string>
+    <string name="nav_patenty">Betas</string>
+
+    <!-- Edit -->
+    <string name="edytuj">Edit</string>
+    <string name="zapisz">Save</string>
+    <string name="zapisz_zmiany">Save changes</string>
+    <string name="edytuj_sesje">Edit session</string>
+    <string name="edytuj_bald">Edit boulder</string>
+    <string name="data_sesji">Session date</string>
+    <string name="zmien_date">Change date</string>
+</resources>

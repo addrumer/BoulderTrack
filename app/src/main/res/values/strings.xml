@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pl">
+    <string name="app_name">BoulderTrack</string>
+    
+    <!-- General -->
+    <string name="wroc">Wróć</string>
+    <string name="anuluj">Anuluj</string>
+    <string name="zamknij">Zamknij</string>
+    <string name="start">Start</string>
+    <string name="brak">Brak</string>
+    <string name="statystyki">Statystyki</string>
+    
+    <!-- Session List -->
+    <string name="nowa_sesja">Nowa sesja wspinaczkowa</string>
+    <string name="nazwa_lokalizacji">Ściana / Nazwa lokalizacji</string>
+    <string name="dodaj_sesje">Dodaj sesję</string>
+    <string name="brak_sesji">Brak sesji!</string>
+    <string name="dodaj_pierwsza_sesje">Kliknij przycisk +, aby rozpocząć pierwszy trening.</string>
+    <string name="sesja_podsumowanie">Baldów: %1$d | Max wycena: %2$s</string>
+    <string name="powitanie">Cześć, Wspinaczu 👋</string>
+    <string name="passa_miesiac" tools:ignore="PluralsCandidate">🔥 %1$d przejść w tym miesiącu</string>
+    <string name="rozpocznij_nowa_sesje"> Rozpocznij nową sesję</string>
+    
+    <!-- Session Detail -->
+    <string name="sesja">Sesja</string>
+    <string name="brak_baldow">Nie dodano jeszcze żadnych baldów.</string>
+    <string name="brak_baldow_tytul">Brak zalogowanych baldów</string>
+    <string name="brak_baldow_opis">Dotknij +, aby zapisać swoje pierwsze przejście w tej sesji</string>
+    <string name="liczba_prob_wartosc">Próby: %1$d</string>
+    <string name="wszystkie">Wszystkie</string>
+    
+    <!-- Add Boulder -->
+    <string name="wycena">Wycena</string>
+    <string name="styl_przejscia">Styl przejścia</string>
+    <string name="liczba_prob">Liczba prób</string>
+    <string name="tagi">Tagi</string>
+    <string name="notatka_opcjonalnie">Notatka (opcjonalnie)</string>
+    <string name="dodaj_bald">Dodaj bald</string>
+    
+    <!-- Tags -->
+    <string name="tag_krawadki">Krawądki</string>
+    <string name="tag_oblaki">Oblaki</string>
+    <string name="tag_dach">Dach</string>
+    <string name="tag_polog">Połóg</string>
+    <string name="tag_rysa">Rysa</string>
+    <string name="tag_skok">Skok</string>
+    
+    <!-- Styles -->
+    <string name="flash">Flash</string>
+    <string name="top">Top</string>
+    <string name="projekt">Projekt</string>
+    
+    <!-- Stats -->
+    <string name="skutecznosc">Skuteczność</string>
+    <string name="brak_danych">Brak danych</string>
+    <string name="piramida">Piramida Wspinaczkowa</string>
+    <string name="statystyki_puste">Zapisz swoje pierwsze przejścia, aby zobaczyć statystyki!</string>
+
+    <!-- Dialogs -->
+    <string name="usuwanie_sesji">Usuwanie sesji</string>
+    <string name="czy_usunac_sesje">Czy na pewno chcesz usunąć sesję \'%1$s\'?</string>
+    <string name="usun">Usuń</string>
+    <!-- Badges -->
+    <string name="odznaka_miesiac">Miesiąc na ścianie 🧗‍♂️</string>
+    
+    <!-- Beta Library -->
+    <string name="brak_patentow">Brak zapisanych patentów</string>
+    
+    <!-- Colors -->
+    <string name="kolor_zielony">Zielony</string>
+    <string name="kolor_rozowy">Różowy</string>
+    <string name="kolor_bialy">Biały</string>
+    <string name="kolor_zolty">Żółty</string>
+    <string name="kolor_pomaranczowy">Pomarańczowy</string>
+    <string name="kolor_czerwony">Czerwony</string>
+    <string name="kolor_fioletowy">Fioletowy</string>
+    <string name="kolor_niebieski">Niebieski</string>
+    <string name="kolor_czarny">Czarny</string>
+    
+    <!-- Session Detail / Add Boulder -->
+    <string name="zdjecia">Zdjęcia</string>
+    <string name="wybrane_zdjecie">Wybrane zdjęcie</string>
+    <string name="usuwanie_balda">Usuwanie balda</string>
+    <string name="czy_usunac_przejscie">Czy na pewno chcesz usunąć to przejście? Tej operacji nie można cofnąć.</string>
+    <string name="udostepnij">Udostępnij</string>
+    <string name="zdjecie_balda">Zdjęcie balda</string>
+    <string name="powiekszone_zdjecie">Powiększone zdjęcie</string>
+    
+    <!-- Timer -->
+    <string name="stoper_odpoczynku">Stoper odpoczynku</string>
+    <string name="gotowy_na_wstawke">Gotowy na wstawkę!</string>
+    <string name="odpoczywaj">Odpoczywaj&#8230;</string>
+    <string name="nowa_wstawka">Nowa wstawka</string>
+    <string name="czas_na_wstawke_opis">Czas odpoczynku minął – pora na wstawkę! 🧗‍♂️</string>
+    <string name="wstrzymaj">Wstrzymaj</string>
+    <string name="wznow">Wznów</string>
+    <string name="resetuj">Reset</string>
+    
+    <!-- Share Dialog -->
+    <string name="topow">Topów</string>
+    <string name="zrob_screena">Zrób screena i udostępnij!</string>
+    <string name="wstawek">Wstawek</string>
+    
+    <!-- Stats -->
+    <string name="sr_prob_na_sukces">Śr. prób na sukces</string>
+    <string name="ukonczone_baldy">Ukończone baldy</string>
+    <string name="osiagniecia">Osiągnięcia</string>
+    <string name="piramida_przejsc">Piramida przejść</string>
+    <string name="radar_stylu">Radar Stylu</string>
+    <string name="progres_topow">Progres Topów</string>
+    <string name="progresja_wycen">Progresja wycen</string>
+    <string name="twoje_sesje">Twoje sesje</string>
+    <string name="aktualne_projekty">🎯 Aktualne Projekty</string>
+
+    <!-- Settings -->
+    <string name="ustawienia">Ustawienia</string>
+    <string name="kopia_zapasowa">Dane i kopia zapasowa</string>
+    <string name="eksportuj_dane">Eksportuj dane</string>
+    <string name="eksportuj_dane_opis">Zapisz kopię zapasową swoich sesji do pliku JSON</string>
+    <string name="importuj_dane">Importuj dane</string>
+    <string name="importuj_dane_opis">Przywróć sesje z wybranego pliku JSON</string>
+    <string name="eksportuj">Eksportuj</string>
+    <string name="importuj">Importuj</string>
+    <string name="import_sukces">Dane zostały pomyślnie zaimportowane!</string>
+    <string name="import_blad">Wystąpił błąd podczas importu danych</string>
+    <string name="jezyk">Język aplikacji</string>
+    <string name="jezyk_opis">Wybierz preferowany język interfejsu</string>
+    <string name="jezyk_polski">Polski 🇵🇱</string>
+    <string name="jezyk_angielski">English 🇬🇧</string>
+    <string name="preferencje_wspinaczkowe">Preferencje wspinaczkowe</string>
+    <string name="domyslna_skala">Domyślna skala wycen</string>
+    <string name="domyslna_skala_opis">Skala używana domyślnie podczas dodawania przejść</string>
+    <string name="skala_font">Fontainebleau (6A, 7A+)</string>
+    <string name="skala_v">V-Scale (V3, V7)</string>
+    <string name="skala_kolory">Kolory (Żółty, Zielony&#8230;)</string>
+    <string name="skala_1_10">Skala 1–10 (1, 5, 10)</string>
+    <string name="stoper_domyslny">Domyślny czas odpoczynku</string>
+    <string name="stoper_domyslny_opis">Czas początkowy dla stopera między wstawkami</string>
+    <string name="sekund_format">%1$d s</string>
+    <string name="minut_format">%1$d min</string>
+    <string name="czas_wybrany">Wybrany: %1$d min (%2$d s)</string>
+    <string name="o_aplikacji">O aplikacji</string>
+    <string name="wersja_aplikacji">Wersja 1.0.0</string>
+    <string name="statystyki_bazy">Statystyki bazy danych</string>
+    <string name="lacznie_sesji" tools:ignore="PluralsCandidate">Sesje w bazie: %1$d</string>
+    <string name="lacznie_baldow" tools:ignore="PluralsCandidate">Baldy w bazie: %1$d</string>
+
+    <!-- Projekty -->
+    <string name="projekty">Projekty</string>
+    <string name="moje_projekty">Moje Projekty</string>
+    <string name="brak_projektow">Brak aktywnych projektów</string>
+    <string name="brak_projektow_opis">Oznacz bald jako \'Projekt\' podczas sesji, aby pojawił się tutaj.</string>
+    <string name="brak_wynikow_wyszukiwania">Brak wyników wyszukiwania</string>
+    <string name="zaliczony_top">Zaliczony! (TOP)</string>
+    <string name="kolejna_proba">+1 wstawka</string>
+    <string name="przejdz_do_sesji">Pokaż sesję</string>
+    <string name="usun_projekt">Usuń projekt</string>
+    <string name="czy_usunac_projekt">Czy na pewno chcesz usunąć ten projekt?</string>
+
+    <!-- Wyszukiwanie i filtry -->
+    <string name="szukaj_sesji_lub_sciany">Szukaj ścianki lub notatki…</string>
+    <string name="szukaj_projektu">Szukaj projektu (wycena, ściana, tag)…</string>
+    <string name="filtruj_sciane">Filtruj ścianę</string>
+    <string name="wszystkie_sciany">Wszystkie ściany</string>
+
+    <!-- Powiadomienia stopera -->
+    <string name="stoper_powiadomienie_tytul">Stoper odpoczynku</string>
+    <string name="stoper_powiadomienie_odliczanie">Pozostało: %1$s</string>
+    <string name="stoper_zakonczony_tytul">Czas odpoczynku minął! ⏰</string>
+    <string name="stoper_zakonczony_tekst">Gotowy na kolejną wstawkę? Daj z siebie wszystko!</string>
+    <string name="stoper_pauza">Pauza</string>
+    <string name="stoper_wznow">Wznów</string>
+    <string name="stoper_plus_30">+30s</string>
+    <string name="stoper_reset">Reset</string>
+
+    <!-- Motywy -->
+    <string name="motyw">Motyw aplikacji</string>
+    <string name="motyw_opis">Wybierz styl wizualny interfejsu</string>
+    <string name="motyw_systemowy">Systemowy ⚙️</string>
+    <string name="motyw_jasny">Jasny ☀️</string>
+    <string name="motyw_ciemny">Ciemny 🌙</string>
+    <string name="motyw_amoled">AMOLED ⚫</string>
+
+    <!-- Udostępnianie sesji -->
+    <string name="udostepnij_sesje_tytul">Podsumowanie sesji boulderowej</string>
+    <string name="udostepnij_sesje_przycisk">Udostępnij sesję 🚀</string>
+    <string name="udostepnij_sukces">Otwieranie udostępniania…</string>
+
+    <!-- Autouzupełnianie lokalizacji -->
+    <string name="ostatnie_scianki">Ostatnie ścianki:</string>
+
+    <!-- Kalendarz aktywności / Heatmapa -->
+    <string name="kalendarz_aktywnosci">Kalendarz Aktywności</string>
+    <string name="kalendarz_aktywnosci_opis">Regularność treningów w ostatnich miesiącach</string>
+    <string name="dni_treningowych">%1$d dni treningowych</string>
+    <string name="passa_dni">🔥 Passa: %1$d dni</string>
+    <string name="mniej">Mniej</string>
+    <string name="wiecej">Więcej</string>
+
+    <!-- Filtry czasowe statystyk -->
+    <string name="zakres_czasu">Zakres:</string>
+    <string name="zakres_wszystko">Wszystko</string>
+    <string name="zakres_30_dni">Ostatnie 30 dni</string>
+    <string name="zakres_90_dni">Ostatnie 3 mies.</string>
+    <string name="zakres_ten_rok">Ten rok</string>
+
+    <!-- Dolny pasek nawigacyjny -->
+    <string name="nav_home">Home</string>
+    <string name="nav_projekty">Projekty</string>
+    <string name="nav_statystyki">Statystyki</string>
+    <string name="nav_patenty">Patenty</string>
+
+    <!-- Edycja -->
+    <string name="edytuj">Edytuj</string>
+    <string name="zapisz">Zapisz</string>
+    <string name="zapisz_zmiany">Zapisz zmiany</string>
+    <string name="edytuj_sesje">Edytuj sesję</string>
+    <string name="edytuj_bald">Edytuj bald</string>
+    <string name="data_sesji">Data sesji</string>
+    <string name="zmien_date">Zmień datę</string>
+</resources>

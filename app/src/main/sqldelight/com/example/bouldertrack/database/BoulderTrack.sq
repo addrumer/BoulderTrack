@@ -1,0 +1,164 @@
+CREATE TABLE ClimbingSession (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    location TEXT NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE BoulderProblem (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sessionId INTEGER NOT NULL,
+    grade TEXT NOT NULL,
+    style TEXT NOT NULL,
+    attempts INTEGER NOT NULL DEFAULT 1,
+    tags TEXT NOT NULL DEFAULT '',
+    note TEXT,
+    photoUri TEXT,
+    FOREIGN KEY(sessionId) REFERENCES ClimbingSession(id) ON DELETE CASCADE
+);
+
+getAllSessions:
+SELECT *
+FROM ClimbingSession
+ORDER BY date DESC;
+
+getSessionById:
+SELECT *
+FROM ClimbingSession
+WHERE id = ?;
+
+getBouldersForSession:
+SELECT *
+FROM BoulderProblem
+WHERE sessionId = ?;
+
+getAllBoulders:
+SELECT *
+FROM BoulderProblem;
+
+insertSession:
+INSERT INTO ClimbingSession (date, location, notes)
+VALUES (?, ?, ?);
+
+getLastInsertRowId:
+SELECT last_insert_rowid();
+
+insertBoulder:
+INSERT INTO BoulderProblem (sessionId, grade, style, attempts, tags, note, photoUri)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateBoulder:
+UPDATE BoulderProblem
+SET grade = ?, style = ?, attempts = ?, tags = ?, note = ?, photoUri = ?
+WHERE id = ?;
+
+updateSession:
+UPDATE ClimbingSession
+SET date = ?, location = ?, notes = ?
+WHERE id = ?;
+
+deleteSession:
+DELETE FROM ClimbingSession
+WHERE id = ?;
+
+deleteBoulder:
+DELETE FROM BoulderProblem
+WHERE id = ?;
+
+countBouldersByGrade:
+SELECT grade, COUNT(*) AS count
+FROM BoulderProblem
+GROUP BY grade;
+
+countSentBouldersByGrade:
+SELECT grade, COUNT(*) AS count
+FROM BoulderProblem
+WHERE style IN ('FLASH', 'TOP')
+GROUP BY grade;
+
+getSessionsWithStats:
+SELECT 
+    s.id, 
+    s.date, 
+    s.location, 
+    s.notes, 
+    COUNT(b.id) AS totalBoulders, 
+    MAX(b.grade) AS maxGrade,
+    COALESCE(SUM(CASE WHEN b.style = 'FLASH' THEN 1 ELSE 0 END), 0) AS flashCount,
+    COALESCE(SUM(CASE WHEN b.style = 'TOP' THEN 1 ELSE 0 END), 0) AS topCount,
+    COALESCE(SUM(CASE WHEN b.style = 'PROJECT' THEN 1 ELSE 0 END), 0) AS projectCount
+FROM ClimbingSession s
+LEFT JOIN BoulderProblem b ON s.id = b.sessionId
+GROUP BY s.id
+ORDER BY s.date DESC;
+
+countBouldersByStyle:
+SELECT style, COUNT(*) AS count
+FROM BoulderProblem
+GROUP BY style;
+CREATE TABLE Goal (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    targetGrade TEXT,
+    targetCount INTEGER,
+    deadline INTEGER,
+    isCompleted INTEGER NOT NULL DEFAULT 0,
+    createdAt INTEGER NOT NULL
+);
+
+CREATE TABLE HangboardSession (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date INTEGER NOT NULL,
+    protocolName TEXT NOT NULL,
+    totalTime INTEGER NOT NULL,
+    note TEXT
+);
+
+getAllGoals:
+SELECT * FROM Goal ORDER BY createdAt DESC;
+
+insertGoal:
+INSERT INTO Goal (title, targetGrade, targetCount, deadline, createdAt)
+VALUES (?, ?, ?, ?, ?);
+
+updateGoalStatus:
+UPDATE Goal SET isCompleted = ? WHERE id = ?;
+
+deleteGoal:
+DELETE FROM Goal WHERE id = ?;
+
+getAllHangboardSessions:
+SELECT * FROM HangboardSession ORDER BY date DESC;
+
+insertHangboardSession:
+INSERT INTO HangboardSession (date, protocolName, totalTime, note)
+VALUES (?, ?, ?, ?);
+
+deleteHangboardSession:
+DELETE FROM HangboardSession WHERE id = ?;
+
+
+getTotalAttempts:
+SELECT SUM(attempts) FROM BoulderProblem;
+
+
+getActiveProjects:
+SELECT * FROM BoulderProblem WHERE style = 'PROJECT';
+
+getActiveProjectsWithSession:
+SELECT 
+    b.id,
+    b.sessionId,
+    b.grade,
+    b.style,
+    b.attempts,
+    b.tags,
+    b.note,
+    b.photoUri,
+    s.date AS sessionDate,
+    s.location AS sessionLocation
+FROM BoulderProblem b
+INNER JOIN ClimbingSession s ON b.sessionId = s.id
+WHERE b.style = 'PROJECT'
+ORDER BY s.date DESC;
+

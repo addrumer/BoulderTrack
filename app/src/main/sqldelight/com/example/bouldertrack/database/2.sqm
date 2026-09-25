@@ -1,0 +1,17 @@
+﻿CREATE TABLE Goal (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    targetGrade TEXT,
+    targetCount INTEGER,
+    deadline INTEGER,
+    isCompleted INTEGER NOT NULL DEFAULT 0,
+    createdAt INTEGER NOT NULL
+);
+
+CREATE TABLE HangboardSession (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date INTEGER NOT NULL,
+    protocolName TEXT NOT NULL,
+    totalTime INTEGER NOT NULL,
+    note TEXT
+);
